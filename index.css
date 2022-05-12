@@ -1,0 +1,11 @@
+.header-img {
+    background-image: url("img/header.jpg");
+}
+
+.custom-img-1 {
+    background-image: url("img/image2.jpg");
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
