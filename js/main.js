@@ -1,8 +1,3 @@
-/* ===================================================================
- * Dazzle - Main JS
- *
- * ------------------------------------------------------------------- */ 
-
 (function($) {
 
 	"use strict";
@@ -20,8 +15,7 @@
 	doc.setAttribute('data-useragent', navigator.userAgent);
 
 	
-	/* Preloader 
-	 * -------------------------------------------------- */
+	// preload
 	var ssPreloader = function() {
 
 		$WIN.on('load', function() {	
@@ -36,8 +30,7 @@
 	};
 
 
-	/* Mobile Menu
-	 * ---------------------------------------------------- */ 
+	// mobile menu
 	var ssMobileMenu = function() {
 
   		var toggleButton = $('.header-menu-toggle'),
@@ -67,17 +60,13 @@
 
 	}; 
 
-
-	/* FitVids
-	 * ---------------------------------------------------- */
 	var ssFitVids = function() {
 		$(".fluid-video-wrapper").fitVids();
 	}; 
 
 
 
-  /* Owl Carousel
-	* ------------------------------------------------------ */
+  // carousel
 	var ssOwlCarousel = function() {
 
 		$(".owl-carousel").owlCarousel({	
@@ -90,8 +79,7 @@
 	};  	
 
 
-  /* Highlight the current section in the navigation bar
-	* ------------------------------------------------------ */
+  // Highlight the current section in the navigation bar
 	var ssWaypoints = function() {
 
 		var sections = $("section"),
@@ -120,8 +108,7 @@
 	};
 
 
-  /* Smooth Scrolling
-	* ------------------------------------------------------ */
+  // smooth scroll
 	var ssSmoothScroll = function() {
 
 		$('.smoothscroll').on('click', function (e) {
@@ -143,16 +130,14 @@
 
 
 
-  /* Placeholder Plugin Settings
-	* ------------------------------------------------------ */
+  // placeholder
 	var ssPlaceholder = function() {
 		$('input, textarea, select').placeholder();  
 	};
 
 
 
-  	/* Alert Boxes
-  	------------------------------------------------------- */
+  	// alert boxes
   	var ssAlertBoxes = function() {
 
   		$('.alert-box').on('click', '.close', function() {
@@ -163,8 +148,7 @@
 	
 
 
-  /* Animate On Scroll
-  	* ------------------------------------------------------ */
+  // animate scroll
 	var ssAOS = function() {
 
 		AOS.init( {
@@ -178,8 +162,7 @@
 
 	};
   
-   /* Initialize
-	* ------------------------------------------------------ */
+   // init
 	(function ssInit() {
 
 		ssPreloader();
