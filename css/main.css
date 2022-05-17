@@ -50,6 +50,11 @@ body {
   padding: 0;
 }
 
+.imglogo {
+  width: 50%;
+  height: auto;
+  margin-top: 2.5rem;
+}
 
 /* ------------------------------------------------------------------- 
  * links - (_document-setup) 
